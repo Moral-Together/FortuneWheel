@@ -118,6 +118,17 @@ function AppInner() {
         onClose={handleCloseModal}
         mode={mode}
       />
+
+      <footer className="app__footer">
+        Built by{' '}
+        <a href="https://github.com/D371L" target="_blank" rel="noopener noreferrer">
+          D371L
+        </a>{' '}
+        for{' '}
+        <a href="https://github.com/Moral-Together" target="_blank" rel="noopener noreferrer">
+          Moral Together
+        </a>
+      </footer>
     </div>
   );
 }

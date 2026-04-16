@@ -107,11 +107,19 @@ src/
 
 ## 🏢 About
 
-This project was created by **[Moral Together](https://github.com/Moral-Together)** — a non-profit organization (NPO) dedicated to connecting communities and promoting shared values.
+This project was built by **[D371L](https://github.com/D371L)** and developed for **[Moral Together](https://github.com/Moral-Together)** — a non-profit organization (NPO) dedicated to connecting communities and promoting shared values.
 
 > *"Connecting for Godswill"*
 
 Fortune Wheel is a free, open-source tool available for anyone to use, modify, and distribute freely.
+
+## 👤 Developer
+
+| | |
+|---|---|
+| **Developer** | [D371L](https://github.com/D371L) |
+| **Organization** | [Moral Together](https://github.com/Moral-Together) |
+| **Type** | Non-profit (NPO) |
 
 ---
 
