@@ -148,13 +148,6 @@ export default function WinnerModal({ winner, onClose, mode }) {
               role="dialog"
               aria-modal="true"
             >
-              {/* Orbiting stars */}
-              <div className="modal__orbit" aria-hidden="true">
-                {['⭐','🌟','✨','💫'].map((s, i) => (
-                  <span key={i} className="modal__orbit-star" style={{ '--i': i }}>{s}</span>
-                ))}
-              </div>
-
               <div className="modal__stars" aria-hidden="true">✨</div>
               <div className="modal__trophy">🏆</div>
               <h2 className="modal__title">{lang.winner}</h2>
@@ -168,6 +161,7 @@ export default function WinnerModal({ winner, onClose, mode }) {
                 onClick={onClose}
                 whileTap={{ scale: 0.95 }}
                 whileHover={{ scale: 1.05 }}
+                dir="ltr"
               >
                 {lang.continueBtn}
               </motion.button>

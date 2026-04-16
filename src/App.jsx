@@ -62,19 +62,14 @@ function AppInner() {
       <Background />
 
       <main className="app__main">
-        {/* ===== LEFT SIDEBAR ===== */}
-        <aside className="app__sidebar">
-          {/* Title block */}
-          <div className="sidebar-title">
+        {/* ===== LEFT SIDEBAR: title + lang + participants ===== */}
+        <aside className="app__sidebar app__sidebar--left">
+          <div className="sidebar-title" dir="ltr">
             <span className="sidebar-title__icon">🎡</span>
             <h1 className="sidebar-title__text">{lang.title}</h1>
             <span className="sidebar-title__icon">⭐</span>
           </div>
-
-          {/* Language selector */}
           <LanguageSelector />
-
-          {/* Participants */}
           <ParticipantPanel
             participants={participants}
             onAdd={addParticipant}
@@ -82,15 +77,9 @@ function AppInner() {
             onReset={resetAll}
             playPop={playPop}
           />
-
-          {/* Mode toggle */}
-          <ModeToggle mode={mode} onChange={setMode} />
-
-          {/* Win history */}
-          <HistoryLog winners={winners} onClear={resetWinners} />
         </aside>
 
-        {/* ===== CENTER: WHEEL ===== */}
+        {/* ===== CENTER: wheel + spin button ===== */}
         <section className="app__center">
           <Wheel
             participants={participants}
@@ -108,6 +97,20 @@ function AppInner() {
             <p className="app__hint">{lang.hint}</p>
           )}
         </section>
+
+        {/* ===== RIGHT SIDEBAR: logo + mode + history ===== */}
+        <aside className="app__sidebar app__sidebar--right">
+          {/* Logo block — styled like the Fortune Wheel title */}
+          <div className="logo-block">
+            <img
+              src={`${import.meta.env.BASE_URL}logo.png`}
+              alt="Moral Together — Connecting for Godswill"
+              className="logo-block__img"
+            />
+          </div>
+          <ModeToggle mode={mode} onChange={setMode} />
+          <HistoryLog winners={winners} onClear={resetWinners} />
+        </aside>
       </main>
 
       <WinnerModal

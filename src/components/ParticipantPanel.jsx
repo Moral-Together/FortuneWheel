@@ -36,7 +36,7 @@ export default function ParticipantPanel({
 
   return (
     <div className="panel">
-      <h2 className="panel__title">👥 {lang.participants}</h2>
+      <h2 className="panel__title" dir="ltr">👥 {lang.participants}</h2>
 
       <div className="panel__input-row">
         <input
@@ -106,6 +106,7 @@ export default function ParticipantPanel({
           className="panel__reset-btn"
           onClick={onReset}
           whileTap={{ scale: 0.95 }}
+          dir="ltr"
         >
           🗑️ {lang.resetAll}
         </motion.button>

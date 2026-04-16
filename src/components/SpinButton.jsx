@@ -13,6 +13,7 @@ export default function SpinButton({ onSpin, isSpinning, disabled }) {
       whileHover={!disabled && !isSpinning ? { scale: 1.06 } : {}}
       transition={{ type: 'spring', stiffness: 400, damping: 17 }}
       aria-label={lang.spinBtn}
+      dir="ltr"
     >
       <span className="spin-btn__text">
         {isSpinning ? lang.spinning : lang.spinBtn}

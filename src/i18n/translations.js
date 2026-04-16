@@ -74,7 +74,7 @@ export const translations = {
     modeEliminationTip: 'המנצח עוזב את הגלגל',
     modeRepeatTip: 'המנצח נשאר בגלגל',
     history: 'היסטוריית ניצחונות',
-    winner: '!מנצח',
+    winner: 'מנצח!',
     winnerNote: 'המשתתף עוזב את הגלגל',
     continueBtn: '🎉 המשך',
     spinBtn: '🎡 !סובב',

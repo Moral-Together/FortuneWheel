@@ -9,7 +9,7 @@ export default function HistoryLog({ winners, onClear }) {
   return (
     <div className="history">
       <div className="history__header">
-        <h3 className="history__title">🏆 {lang.history}</h3>
+        <h3 className="history__title" dir="ltr">🏆 {lang.history}</h3>
         <button className="history__clear" onClick={onClear} title="×">
           ×
         </button>

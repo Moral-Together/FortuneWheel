@@ -11,6 +11,7 @@ export default function ModeToggle({ mode, onChange }) {
           className={`mode-btn ${mode === 'elimination' ? 'mode-btn--active' : ''}`}
           onClick={() => onChange('elimination')}
           title={lang.modeEliminationTip}
+          dir="ltr"
         >
           ✂️ {lang.modeElimination}
         </button>
@@ -18,6 +19,7 @@ export default function ModeToggle({ mode, onChange }) {
           className={`mode-btn ${mode === 'repeat' ? 'mode-btn--active' : ''}`}
           onClick={() => onChange('repeat')}
           title={lang.modeRepeatTip}
+          dir="ltr"
         >
           🔁 {lang.modeRepeat}
         </button>
